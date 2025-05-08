@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Registration Form</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box register">
+            <form action="#">
+                <h1>Transaction Registration</h1>
+                
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="date" placeholder="Transaction Date" required>
+                    <i class='bx bx-calendar'></i>
+                </div>
+
+                <div class="input-box">
+                    <select required>
+                        <option value="" disabled selected>Select Transaction Type</option>
+                        <option value="purchase">Purchase</option>
+                        <option value="refund">Refund</option>
+                        <option value="transfer">Transfer</option>
+                    </select>
+                    <i class='bx bx-transfer'></i>
+                </div>
+
+                <div class="input-box">
+                    <select required>
+                        <option value="" disabled selected>Select Payment Gateway</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="stripe">Stripe</option>
+                        <option value="razorpay">Razorpay</option>
+                    </select>
+                    <i class='bx bx-credit-card'></i>
+                </div>
+
+                <div class="input-box">
+                    <select required>
+                        <option value="" disabled selected>Select Transaction State</option>
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                        <option value="failed">Failed</option>
+                    </select>
+                    <i class='bx bx-check-circle'></i>
+                </div>
+
+                <div class="input-box">
+                    <select required>
+                        <option value="" disabled selected>Select Merchant Category</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="groceries">Groceries</option>
+                    </select>
+                    <i class='bx bx-store-alt'></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Transaction Amount" required>
+                    <i class='bx bx-dollar'></i>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+
+                <!-- <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div> -->
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
